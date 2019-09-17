@@ -28,3 +28,27 @@ sumFibs(4000000) should return 4613732.
 sumFibs(4) should return 5.
 sumFibs(75024) should return 60696.
 sumFibs(75025) should return 135721.*/
+
+function raisePower(num, power) {
+	if (power === undefined ) {
+		return num;
+	} else if (power === 0) {
+		return 1;
+    } else {
+		return num * raisePower(num, power - 1);
+	}
+}
+
+console.log(raisePower(2, 2))
+
+function getFibonacci(num) {
+  const fibonacciNums = [0, 1];
+
+  for (let i = 1; i <= num; i++) {
+    fibonacciNums.push(fibonacciNums[i] + fibonacciNums[i-1]);
+  }
+
+  return fibonacciNums
+}
+
+console.log(getFibonacci(10))

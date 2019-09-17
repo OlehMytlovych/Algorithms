@@ -13,7 +13,7 @@ We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and 
 
 function palindrome(str) {
     //1.
-    let regExp = /[^a-z0-9]/gi,
+    /* let regExp = /[^a-z0-9]/gi,
     reversedStr,
     bool = true;
 
@@ -31,10 +31,10 @@ function palindrome(str) {
         }
         
     });
-    return bool
+    return bool */
 
     //2. this one performs better
-    /*
+    
     //assign a front and a back pointer
       let front = 0
       let back = str.length - 1
@@ -58,12 +58,12 @@ function palindrome(str) {
     }
 
     //if the whole string has been compared without returning false, it's a palindrome!
-    return true*/
+    return true
   }
   
   
   
-  console.log(palindrome("0_2 (: /-\ :) 22"));
+  console.log(palindrome("0_2 (: /-\ :) 20"));
 
   /*
   palindrome("eye") should return a boolean.
